@@ -221,29 +221,16 @@ $(document).ready(function () {
         arrows: true,
         infinite: true,
         speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
-        swipe: false
-    });
-
-    function top1Timer(date) {
-        var finalDate = new Date();
-        finalDate = finalDate.setTime(finalDate.getTime() - (date*1000));
-        $('#hit-parade-timer').countdown(finalDate, { elapse: true })
-        .on('update.countdown', function(event) {
-            var $this = $(this);
-            if (event.elapsed) {
-                $this.html(event.strftime('<span>'+ event.offset.totalMinutes +':%S</span>'));
-            } else {
-                $this.html(event.strftime('<span>'+ event.offset.totalMinutes +':%S</span>'));
+        responsive: [
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
             }
-        });
-    }
-    // date - 360 секунд (6 минут)
-    top1Timer(360);
-
-    setTimeout(function(){
-        $('.top1-hit-parade .new-lider').fadeIn();
-        $('.top1-hit-parade .new-lider').delay(2000).fadeOut();
-    }, 3000);
+        ]
+    });
 });
