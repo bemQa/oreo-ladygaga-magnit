@@ -775,6 +775,11 @@ header {
     width: 100%;
 }
 
+.logo-big {
+    top: 0;
+    max-width: 250px;
+}
+
 .magnit-logo {
     position: absolute;
     top: -10px;
@@ -2758,245 +2763,61 @@ table td:nth-child(3) {
 
 .main-block {
     position: relative;
-    min-height: 400px;
+    min-height: 500px;
     padding: 30px 0 50px;
 }
 
 .main-block::before {
     content: '';
     position: absolute;
-    top: -90px;
-    left: -1300px;
-    right: 0;
-    bottom: 0;
-    width: 1045px;
-    height: 1208px;
-    margin: 0 auto;
-    background: url(../img/bg-main.png) center 0 no-repeat;
-    background-size: 877px;
+    top: -35px;
+    left: 0;
+    width: 590px;
+    height: 1019px;
+    background: url(../img/main-bg.png) center 0 no-repeat;
+    background-size: 590px;
     z-index: 0;
 }
 
-.ladygaga-text-img {
-    position: absolute;
-    top: 230px;
-    left: -1050px;
-    right: 0;
-    margin: auto;
-    width: 136px;
-}
-
-.main-block-wrapper {
-    position: relative;
-    display: flex;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
-    justify-content: space-between;
-    max-width: 730px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.main-block-left {
-    position: relative;
-    max-width: 280px;
-    width: 100%;
-    padding-top: 270px;
+.main-block .container {
+    max-width: 1200px;
 }
 
 .kv {
     position: absolute;
     top: -105px;
-    left: -30px;
-    right: -142px;
-    width: 456px;
-    height: 419px;
+    left: 0;
+    right: 0;
+    width: 527px;
+    height: 562px;
     margin: auto;
     background: url(../img/kv.png) center no-repeat;
     background-size: contain;
 }
 
-.main-btn {
-    width: 280px;
-    padding: 16px 10px;
-    background: url(../img/main-btn-bg.png) center no-repeat;
-    background-size: cover;
-    text-transform: none;
-    color: #0062AB;
-}
-
-.main-btn img {
-    margin-right: 15px;
-}
-
-.main-btn:first-child {
-    margin-bottom: 15px;
-}
-
-.main-block-right {
+.main-right {
     position: relative;
     display: flex;
     flex-direction: column;
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    max-width: 380px;
+    max-width: 320px;
     width: 100%;
-    color: #fff;
+    height: 400px;
+    margin-left: auto;
 }
 
-.hit-parade-title {
-    position: relative;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 5px;
+.main-btn-wrapper {
+    margin: 0 auto 20px;
 }
 
-.top1-hit-parade {
-    position: relative;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    max-width: 245px;
-    width: 100%;
-    height: 70px;
-    margin: 0 auto 15px;
-    padding: 17px 13px;
-    background: linear-gradient(66.04deg, #AF1BA9 0%, #F43378 100%);
-    box-shadow: 0px 4px 8px rgba(2, 40, 74, 0.25);
-    border-radius: 10px;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-.new-lider {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background: linear-gradient(66.04deg, #FFFFFF 0%, #DCDCDC 100%);
-    box-shadow: 0px 4px 8px rgba(2, 40, 74, 0.25);
-    border-radius: 10px;
-    z-index: 2;
-}
-
-.new-lider::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(66.04deg, #FFFFFF 0%, #DCDCDC 100%);
-    opacity: 0.9;
-    filter: blur(44px);
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.new-lider::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    background: url(../img/lider.svg) center no-repeat;
-    background-size: 112px;
-    z-index: 2;
-}
-
-.top1-hit-parade .hit-parade-num {
-    margin-right: 10px;
-}
-
-.top10-hit-parade .hit-parade-num {
-    margin-right: 25px;
-}
-
-.top1-hit-parade .hit-parade-name {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100px;
-    min-width: 100px;
-    margin-right: 10px;
-}
-
-.top1-hit-parade .hit-parade-count {
-    min-width: 35px;
-}
-
-.top10-hit-parade .hit-parade-name {
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 70px;
-    min-width: 70px;
-    margin-right: 25px;
-}
-
-.top10-hit-parade .hit-parade-count {
-    min-width: 30px;
-}
-
-.top10-hit-parade-wrapper {
-    min-height: 252px;
-}
-
-.top10-hit-parade {
-    position: relative;
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.hit-parade-avatar {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
-    background-color: #114182;
-    border-radius: 50%;
-    margin-right: 20px;
-    overflow: hidden;
-}
-
-.top1-hit-parade .hit-parade-avatar {
-    width: 36px;
-    height: 36px;
-    margin-right: 10px;
-}
-
-.hit-parade-avatar img {
-    width: 20px;
-}
-
-.top1-hit-parade .hit-parade-avatar img {
-    width: 36px;
+.main-btn {
+    width: 320px;
+    height: 78px;
+    padding: 21px 40px;
+    font-size: 36px;
+    border-radius: 50px;
 }
 
 .main-page {
@@ -3029,21 +2850,32 @@ table td:nth-child(3) {
 }
 
 .step-num {
-    display: flex;
-    -ms-align-items: center;
-    align-items: center;
-    justify-content: center;
     width: 64px;
     height: 61px;
     margin: 0 auto 15px;
-    padding-top: 8px;
     background: url(../img/step-num-bg.svg) center no-repeat;
     background-size: contain;
-    font-weight: bold;
-    font-size: 31px;
-    line-height: 1;
-    text-align: center;
-    color: #fff;
+}
+
+.step1 .step-num {
+    width: 72px;
+    height: 69px;
+    background: url(../img/step-num1.svg) center no-repeat;
+    background-size: contain;
+}
+
+.step2 .step-num {
+    width: 74px;
+    height: 71px;
+    background: url(../img/step-num2.svg) center no-repeat;
+    background-size: contain;
+}
+
+.step3 .step-num {
+    width: 76px;
+    height: 73px;
+    background: url(../img/step-num3.svg) center no-repeat;
+    background-size: contain;
 }
 
 .step-title {
@@ -3078,7 +2910,7 @@ table td:nth-child(3) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 30px auto 0;
+    margin: 30px auto;
 }
 
 .prizes-label {
@@ -3141,8 +2973,8 @@ table td:nth-child(3) {
     -ms-align-items: center;
     align-items: center;
     justify-content: center;
-    height: 220px;
-    background: url(../img/prize-bg.png) center no-repeat;
+    height: 223px;
+    background: url(../img/prize-bg.jpg) center no-repeat;
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -3158,6 +2990,18 @@ table td:nth-child(3) {
     text-transform: uppercase;
     z-index: 1;
     margin-bottom: 10px;
+}
+
+.prize-name.super-name {
+    position: absolute;
+    bottom: -120px;
+    left: -110px;
+    right: -100px;
+    margin: auto;
+    width: 396px;
+    height: 132px;
+    background: url(../img/super-text.png) center no-repeat;
+    background-size: contain;
 }
 
 .prize-text {
@@ -3222,15 +3066,21 @@ table td:nth-child(3) {
     max-width: 300px;
     width: 100%;
     height: 220px;
-    background: url(../img/prize-bg.png) center no-repeat;
+    background: url(../img/prize-bg.jpg) center no-repeat;
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 30px;
 }
 
-.exclusive-prize-img img {
+.ps4 .exclusive-prize-img img {
     position: relative;
-    max-width: 252px;
+    max-width: 227px;
+}
+
+.ps5 .exclusive-prize-img img {
+    position: relative;
+    max-width: 179px;
+    margin-bottom: 25px;
 }
 
 .exclusive-prize-name {
@@ -3241,14 +3091,12 @@ table td:nth-child(3) {
     text-transform: uppercase;
 }
 
-.color-5ka {
-    padding: 2px;
-    background: #E52415;
+.exclusive-prize-name span {
+    color: #EF4581;
 }
 
-.color-perek {
-    padding: 2px;
-    background: #0F9949;
+.exclusive-prizes-block .btn-wrapper {
+     margin-bottom: 150px;
 }
 
 .next-draw {
@@ -3269,6 +3117,7 @@ table td:nth-child(3) {
 }
 
 .img-remark {
+    font-family: 'Pluto Sans';
     font-size: 12px;
     line-height: 15px;
 }
@@ -3318,17 +3167,17 @@ table td:nth-child(3) {
 
 .error-page {
     position: relative;
-    min-height: 510px;
+    min-height: 620px;
 }
 
 .error-page::before {
     content: '';
     position: absolute;
-    top: -90px;
+    top: -100px;
     right: 0;
     bottom: 0;
-    width: 711px;
-    height: 874px;
+    width: 795px;
+    height: 797px;
     margin: 0 auto;
     background: url(../img/bg-error.png) center 0 no-repeat;
     background-size: cover;
@@ -3336,28 +3185,31 @@ table td:nth-child(3) {
 }
 
 .error-404 {
-    position: relative;
-    max-width: 1349px;
+    position: absolute;
+    left: -225px;
+    right: 0;
+    max-width: 1448px;
     width: 100%;
-    height: 599px;
-    margin: 0 auto 50px;
+    height: 584px;
+    margin: 0 auto;
     background: url(../img/404.png) center no-repeat;
-    background-size: 1349px;
+    background-size: 1448px;
 }
 
 .error-404 + .btn-wrapper {
-    position: absolute;
-    top: 530px;
+    padding-top: 530px;
 }
 
 .error-500 {
-    position: relative;
-    max-width: 1351px;
+    position: absolute;
+    left: -225px;
+    right: 0;
+    max-width: 1448px;
     width: 100%;
-    height: 587px;
-    margin: 0 auto 50px;
+    height: 584px;
+    margin: 0 auto;
     background: url(../img/500.png) center no-repeat;
-    background-size: 1351px;
+    background-size: 1448px;
 }
 
 @media (max-width: 1280px) {
@@ -3417,12 +3269,16 @@ table td:nth-child(3) {
     }
 
     .main-block::before {
-        left: -1240px;
+        left: -40px;
     }
 
-    .ladygaga-text-img {
-        left: -860px;
-        width: 110px;
+    .kv {
+        transform: scale(.75);
+    }
+
+    .prize {
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
@@ -4087,45 +3943,39 @@ table td:nth-child(3) {
     }
 
     .main-block {
-        padding: 0 0 50px;
+        min-height: 540px;
+        padding: 0 0 60px;
     }
 
     .main-block::before {
-        top: -90px;
-        left: 0;
-        right: auto;
-        width: 321px;
-        height: 343px;
-        background: url(../img/bg-main-mob.png) center bottom no-repeat;
+        top: -65px;
+        left: auto;
+        right: 0;
+        width: 375px;
+        height: 220px;
+        background: url(../img/main-bg-mob.png) center bottom no-repeat;
         background-size: cover;
     }
 
-    .main-block-wrapper {
-        flex-direction: column;
-        -ms-align-items: center;
-        align-items: center;
-        max-width: 375px;
-    }
-
     .kv {
-        top: -30px;
-        width: 367px;
-        height: 337px;
+        top: 0;
+        left: -100px;
+        right: -100px;
+        width: 362px;
+        height: 386px;
+        transform: scale(1);
     }
 
-    .main-block-left {
-        position: static;
-        padding-top: 0;
+    .main-right {
+        margin: auto;
+        padding-top: 450px;
     }
 
-    .main-block-right {
-        margin-top: 270px;
-        margin-bottom: 40px;
-        order: -1;
-    }
-
-    .top10-hit-parade-wrapper {
-        min-height: auto;
+    .main-btn {
+        width: 270px;
+        height: 64px;
+        padding: 17px 40px;
+        font-size: 30px;
     }
 
     .steps-block {
@@ -4139,6 +3989,15 @@ table td:nth-child(3) {
 
     .step {
         margin: 20px auto;
+    }
+
+    .step .btn-wrapper {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .prizes {
+        margin-bottom: 60px;
     }
 
     .prizes-subtitle {
@@ -4184,6 +4043,10 @@ table td:nth-child(3) {
         margin: 25px auto;
     }
 
+    .exclusive-prizes-block .btn-wrapper {
+        margin-bottom: 75px;
+    }
+
     .next-draw-date {
         font-size: 58px;
         line-height: 70px;
@@ -4212,34 +4075,44 @@ table td:nth-child(3) {
         line-height: 28px;
     }
 
+    .error-page {
+        min-height: 530px;
+    }
+
     .error-page::before {
         top: 0;
         left: -250px;
         right: -250px;
-        width: 805px;
-        height: 550px;
-        background: url(../img/bg-main-mob.png) center bottom no-repeat;
+        width: 375px;
+        height: 749px;
+        background: url(../img/bg-error-mob.png) center 0 no-repeat;
         background-size: cover;
     }
 
     .error-404 {
-        max-width: 375px;
+        top: 90px;
+        left: -50px;
+        right: -50px;
+        max-width: 367px;
         width: 100%;
-        height: 437px;
-        margin: 0 auto 20px;
+        height: 340px;
+        margin: 0 auto;
         background: url(../img/404-mob.png) center no-repeat;
         background-size: 375px;
     }
 
     .error-404 + .btn-wrapper {
-        top: 430px;
+        padding-top: 430px;
     }
 
     .error-500 {
-        max-width: 375px;
+        top: 90px;
+        left: -50px;
+        right: -50px;
+        max-width: 367px;
         width: 100%;
-        height: 488px;
-        margin: 0 auto 0;
+        height: 391px;
+        margin: 0 auto;
         background: url(../img/500-mob.png) center no-repeat;
         background-size: 375px;
     }
