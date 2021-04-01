@@ -2071,10 +2071,30 @@ table td:nth-child(3) {
     line-height: 20px;
 }
 
+.winners-exclusive-slider .slick-prev,
+.winners-exclusive-slider .slick-next {
+    top: 70px;
+    bottom: auto;
+    width: 23px;
+    height: 36px;
+}
+
+.winners-exclusive-slider .slick-prev {
+    left: 0;
+    background: url(../img/arrow-left-blue.svg) center no-repeat;
+    background-size: contain;
+}
+
+.winners-exclusive-slider .slick-next {
+    right: 0;
+    background: url(../img/arrow-right-blue.svg) center no-repeat;
+    background-size: contain;
+}
+
 .winners-exclusive-wrapper {
-    display: flex;
-    justify-content: space-between;
-    max-width: 720px;
+    /*display: flex;
+    justify-content: space-between;*/
+    max-width: 800px;
     width: 100%;
     margin: 50px auto 0;
 }
@@ -2082,6 +2102,7 @@ table td:nth-child(3) {
 .winners-exclusive {
     max-width: 310px;
     width: 100%;
+    margin: auto;
 }
 
 .winners-exclusive-img {
@@ -2098,6 +2119,10 @@ table td:nth-child(3) {
     margin-bottom: 25px;
 }
 
+.winners-exclusive-img img {
+    max-width: 186px;
+}
+
 .ps4 .winners-exclusive-img img {
     max-width: 183px;
 }
@@ -2109,6 +2134,16 @@ table td:nth-child(3) {
 
 .winners-exclusive-info {
     margin-bottom: 25px;
+}
+
+.winners-exclusive-week {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #02284A;
+    opacity: 0.5;
+    margin-bottom: 10px;
 }
 
 .winners-exclusive-name {
@@ -3029,7 +3064,7 @@ table td:nth-child(3) {
 
 .exclusive-prizes {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     max-width: 810px;
     width: 100%;
     margin: 0 auto;
@@ -3070,6 +3105,10 @@ table td:nth-child(3) {
     background-size: cover;
     border-radius: 20px;
     margin-bottom: 30px;
+}
+
+.exclusive-prize-img img {
+    max-width: 257px;
 }
 
 .ps4 .exclusive-prize-img img {
@@ -3876,11 +3915,19 @@ table td:nth-child(3) {
         font-size: 35px;
     }
 
+    .winners-exclusive-slider .slick-prev {
+        left: -10px;
+    }
+
+    .winners-exclusive-slider .slick-next {
+        right: -10px;
+    }
+
     .winners-exclusive-wrapper {
-        flex-direction: column;
+        /*flex-direction: column;
         -ms-align-items: center;
         align-items: center;
-        justify-content: center;
+        justify-content: center;*/
         margin-top: 30px;
     }
 
