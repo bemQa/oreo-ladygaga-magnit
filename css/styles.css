@@ -2282,6 +2282,149 @@ table td:nth-child(3) {
     -webkit-text-fill-color: transparent;
 }
 
+.lk-top200-wrapper {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto 80px;
+}
+
+.lk-top200-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 272px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lk-top200 {
+    max-width: 316px;
+    width: 100%;
+    height: 155px;
+    margin: 0 auto;
+    padding: 10px;
+    background: url(../img/lk-top200-bg.png) center no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.lk-top200-top {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    font-weight: bold;
+    font-size: 37px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.lk-top200-bottom {
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    justify-content: center;
+    height: 66px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.lk-cards {
+    max-width: 272px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lk-cards-title {
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 23px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.lk-cards-text {
+    font-size: 14px;
+    line-height: 1;
+    color: #02284A;
+    margin-bottom: 25px;
+}
+
+.reg-card-block {
+    position: relative;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 33px;
+    padding-left: 60px;
+}
+
+.reg-card-block.pka::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 33px;
+    margin: auto;
+    background: url(../img/card-5ka.png) center no-repeat;
+    background-size: contain;
+}
+
+.reg-card-block.perek::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 46px;
+    height: 34px;
+    margin: auto;
+    background: url(../img/card-perek.png) center no-repeat;
+    background-size: contain;
+}
+
+.reg-card-block.magnit::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 33px;
+    margin: auto;
+    background: url(../img/card-magnit.svg) center no-repeat;
+    background-size: contain;
+}
+
+.reg-card-name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #020202;
+    margin-right: 10px;
+}
+
+.reg-card-link {
+    font-size: 16px;
+    line-height: 20px;
+    opacity: .7;
+}
+
 .lk-wrapper {
     display: flex;
     justify-content: space-between;
@@ -3706,15 +3849,14 @@ table td:nth-child(3) {
         margin-bottom: 40px;
     }
 
-    .lk-top200-btns {
+    /*.lk-top200-btns {
         margin-bottom: 50px;
-    }
+    }*/
 
     .lk-cards {
         text-align: center;
+        margin-top: 20px;
     }
-
-    .lk-cards-title
 
     .lk-page .title {
         font-size: 24px;
